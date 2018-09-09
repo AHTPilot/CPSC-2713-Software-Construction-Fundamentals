@@ -40,11 +40,13 @@
                this.manageHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.manageBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+               this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
                this.menuStrip1.SuspendLayout();
                this.SuspendLayout();
                // 
                // menuStrip1
                // 
+               this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
                this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
@@ -62,6 +64,7 @@
             this.closeCurrentTabToolStripMenuItem,
             this.savePageAsHTMLToolStripMenuItem,
             this.printPageToolStripMenuItem,
+            this.toolStripSeparator1,
             this.exitWebBrowserToolStripMenuItem});
                this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
                this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -113,6 +116,7 @@
                this.exitWebBrowserToolStripMenuItem.Name = "exitWebBrowserToolStripMenuItem";
                this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.exitWebBrowserToolStripMenuItem.Text = "Exit Web Browser";
+               this.exitWebBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitWebBrowserToolStripMenuItem_Click);
                // 
                // manageHistoryToolStripMenuItem
                // 
@@ -131,6 +135,12 @@
                this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
                this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.aboutToolStripMenuItem.Text = "About";
+               this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+               // 
+               // toolStripSeparator1
+               // 
+               this.toolStripSeparator1.Name = "toolStripSeparator1";
+               this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
                // 
                // TigerNet
                // 
@@ -140,7 +150,7 @@
                this.Controls.Add(this.menuStrip1);
                this.MainMenuStrip = this.menuStrip1;
                this.Name = "TigerNet";
-               this.Text = "TigerNetcs";
+               this.Text = "TigerNet";
                this.menuStrip1.ResumeLayout(false);
                this.menuStrip1.PerformLayout();
                this.ResumeLayout(false);
@@ -162,5 +172,6 @@
           private System.Windows.Forms.ToolStripMenuItem manageBookmarksToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+          private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
      }
 }
