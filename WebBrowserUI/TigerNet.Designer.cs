@@ -213,7 +213,8 @@
                // 
                this.AddressTextBox.Name = "AddressTextBox";
                this.AddressTextBox.Size = new System.Drawing.Size(700, 25);
-               this.AddressTextBox.Click += new System.EventHandler(this.AddressTextBox_Click);
+               this.AddressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddressTextBox_KeyDown);
+               this.AddressTextBox.Click += new System.EventHandler(this.GoButton_Click);
                // 
                // GoButton
                // 

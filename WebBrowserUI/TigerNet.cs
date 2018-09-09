@@ -30,14 +30,19 @@ namespace WebBrowserUI
                     "as a language. Enjoy and War Eagle!");
           }
 
-          private void AddressTextBox_Click(object sender, EventArgs e)
-          {
-               webBrowser1.Navigate(AddressTextBox.Text);
-          }
 
           private void GoButton_Click(object sender, EventArgs e)
           {
                webBrowser1.Navigate(AddressTextBox.Text);
           }
+
+          private void AddressTextBox_KeyDown(object sender, KeyEventArgs e)
+          {
+               if (e.KeyCode == Keys.Enter)
+               {
+                    webBrowser1.Navigate(AddressTextBox.Text);
+               }
+               }
+
      }
 }
