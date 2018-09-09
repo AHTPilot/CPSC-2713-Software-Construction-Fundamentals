@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WebBrowserUI
 {
-     public partial class Form1 : Form
+     public partial class TigerNet : Form
      {
-          public Form1()
+          public TigerNet()
           {
                InitializeComponent();
           }
