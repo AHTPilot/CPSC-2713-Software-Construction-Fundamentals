@@ -50,8 +50,13 @@
                this.AddressTextBox = new System.Windows.Forms.ToolStripTextBox();
                this.GoButton = new System.Windows.Forms.ToolStripButton();
                this.Bookmark = new System.Windows.Forms.ToolStripButton();
+               this.tabPage1 = new System.Windows.Forms.TabPage();
+               this.tabControl1 = new System.Windows.Forms.TabControl();
+               this.webBrowser1 = new System.Windows.Forms.WebBrowser();
                this.menuStrip1.SuspendLayout();
                this.toolStrip1.SuspendLayout();
+               this.tabPage1.SuspendLayout();
+               this.tabControl1.SuspendLayout();
                this.SuspendLayout();
                // 
                // menuStrip1
@@ -63,7 +68,7 @@
             this.helpToolStripMenuItem});
                this.menuStrip1.Location = new System.Drawing.Point(0, 0);
                this.menuStrip1.Name = "menuStrip1";
-               this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+               this.menuStrip1.Size = new System.Drawing.Size(882, 24);
                this.menuStrip1.TabIndex = 0;
                this.menuStrip1.Text = "menuStrip1";
                // 
@@ -164,7 +169,7 @@
             this.Bookmark});
                this.toolStrip1.Location = new System.Drawing.Point(0, 24);
                this.toolStrip1.Name = "toolStrip1";
-               this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+               this.toolStrip1.Size = new System.Drawing.Size(882, 25);
                this.toolStrip1.TabIndex = 1;
                this.toolStrip1.Text = "toolStrip1";
                // 
@@ -175,7 +180,7 @@
                this.BackButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.BackButton.Name = "BackButton";
                this.BackButton.Size = new System.Drawing.Size(23, 22);
-               this.BackButton.Text = "BackButton";
+               this.BackButton.Text = "Back";
                // 
                // FowardButton
                // 
@@ -184,7 +189,7 @@
                this.FowardButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.FowardButton.Name = "FowardButton";
                this.FowardButton.Size = new System.Drawing.Size(23, 22);
-               this.FowardButton.Text = "ForwardButton";
+               this.FowardButton.Text = "Forward";
                // 
                // RefreshButton
                // 
@@ -193,7 +198,7 @@
                this.RefreshButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.RefreshButton.Name = "RefreshButton";
                this.RefreshButton.Size = new System.Drawing.Size(23, 22);
-               this.RefreshButton.Text = "RefreshButton";
+               this.RefreshButton.Text = "Refresh";
                // 
                // HomeButton
                // 
@@ -202,12 +207,12 @@
                this.HomeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.HomeButton.Name = "HomeButton";
                this.HomeButton.Size = new System.Drawing.Size(23, 22);
-               this.HomeButton.Text = "Home Button";
+               this.HomeButton.Text = "Home";
                // 
                // AddressTextBox
                // 
                this.AddressTextBox.Name = "AddressTextBox";
-               this.AddressTextBox.Size = new System.Drawing.Size(550, 25);
+               this.AddressTextBox.Size = new System.Drawing.Size(700, 25);
                // 
                // GoButton
                // 
@@ -216,7 +221,7 @@
                this.GoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.GoButton.Name = "GoButton";
                this.GoButton.Size = new System.Drawing.Size(23, 22);
-               this.GoButton.Text = "Go Button";
+               this.GoButton.Text = "Go";
                // 
                // Bookmark
                // 
@@ -225,13 +230,43 @@
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
                this.Bookmark.Size = new System.Drawing.Size(23, 22);
-               this.Bookmark.Text = "Bookmark";
+               this.Bookmark.Text = "Bookmark Page";
+               // 
+               // tabPage1
+               // 
+               this.tabPage1.Controls.Add(this.webBrowser1);
+               this.tabPage1.Location = new System.Drawing.Point(4, 22);
+               this.tabPage1.Name = "tabPage1";
+               this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+               this.tabPage1.Size = new System.Drawing.Size(849, 402);
+               this.tabPage1.TabIndex = 0;
+               this.tabPage1.Text = "tabPage1";
+               this.tabPage1.UseVisualStyleBackColor = true;
+               // 
+               // tabControl1
+               // 
+               this.tabControl1.Controls.Add(this.tabPage1);
+               this.tabControl1.Location = new System.Drawing.Point(13, 53);
+               this.tabControl1.Name = "tabControl1";
+               this.tabControl1.SelectedIndex = 0;
+               this.tabControl1.Size = new System.Drawing.Size(857, 428);
+               this.tabControl1.TabIndex = 2;
+               // 
+               // webBrowser1
+               // 
+               this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+               this.webBrowser1.Location = new System.Drawing.Point(3, 3);
+               this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+               this.webBrowser1.Name = "webBrowser1";
+               this.webBrowser1.Size = new System.Drawing.Size(843, 396);
+               this.webBrowser1.TabIndex = 0;
                // 
                // TigerNet
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-               this.ClientSize = new System.Drawing.Size(800, 450);
+               this.ClientSize = new System.Drawing.Size(882, 493);
+               this.Controls.Add(this.tabControl1);
                this.Controls.Add(this.toolStrip1);
                this.Controls.Add(this.menuStrip1);
                this.MainMenuStrip = this.menuStrip1;
@@ -241,6 +276,8 @@
                this.menuStrip1.PerformLayout();
                this.toolStrip1.ResumeLayout(false);
                this.toolStrip1.PerformLayout();
+               this.tabPage1.ResumeLayout(false);
+               this.tabControl1.ResumeLayout(false);
                this.ResumeLayout(false);
                this.PerformLayout();
 
@@ -269,5 +306,8 @@
           private System.Windows.Forms.ToolStripTextBox AddressTextBox;
           private System.Windows.Forms.ToolStripButton GoButton;
           private System.Windows.Forms.ToolStripButton Bookmark;
+          private System.Windows.Forms.TabPage tabPage1;
+          private System.Windows.Forms.WebBrowser webBrowser1;
+          private System.Windows.Forms.TabControl tabControl1;
      }
 }
