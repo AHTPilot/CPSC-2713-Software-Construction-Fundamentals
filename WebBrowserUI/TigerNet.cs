@@ -29,5 +29,15 @@ namespace WebBrowserUI
                     "CPSC 2713 Software Construction Fundamentals course. This project is Tom's first exposure to C# " +
                     "as a language. Enjoy and War Eagle!");
           }
+
+          private void AddressTextBox_Click(object sender, EventArgs e)
+          {
+               webBrowser1.Navigate(AddressTextBox.Text);
+          }
+
+          private void GoButton_Click(object sender, EventArgs e)
+          {
+               webBrowser1.Navigate(AddressTextBox.Text);
+          }
      }
 }

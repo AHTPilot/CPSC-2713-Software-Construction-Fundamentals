@@ -213,6 +213,7 @@
                // 
                this.AddressTextBox.Name = "AddressTextBox";
                this.AddressTextBox.Size = new System.Drawing.Size(700, 25);
+               this.AddressTextBox.Click += new System.EventHandler(this.AddressTextBox_Click);
                // 
                // GoButton
                // 
@@ -222,6 +223,7 @@
                this.GoButton.Name = "GoButton";
                this.GoButton.Size = new System.Drawing.Size(23, 22);
                this.GoButton.Text = "Go";
+               this.GoButton.Click += new System.EventHandler(this.GoButton_Click);
                // 
                // Bookmark
                // 
