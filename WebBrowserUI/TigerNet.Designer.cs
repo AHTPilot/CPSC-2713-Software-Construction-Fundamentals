@@ -28,6 +28,7 @@
           /// </summary>
           private void InitializeComponent()
           {
+               System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TigerNet));
                this.menuStrip1 = new System.Windows.Forms.MenuStrip();
                this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,16 @@
                this.manageBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+               this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+               this.BackButton = new System.Windows.Forms.ToolStripButton();
+               this.FowardButton = new System.Windows.Forms.ToolStripButton();
+               this.RefreshButton = new System.Windows.Forms.ToolStripButton();
+               this.HomeButton = new System.Windows.Forms.ToolStripButton();
+               this.AddressTextBox = new System.Windows.Forms.ToolStripTextBox();
+               this.GoButton = new System.Windows.Forms.ToolStripButton();
+               this.Bookmark = new System.Windows.Forms.ToolStripButton();
                this.menuStrip1.SuspendLayout();
+               this.toolStrip1.SuspendLayout();
                this.SuspendLayout();
                // 
                // menuStrip1
@@ -142,17 +152,95 @@
                this.toolStripSeparator1.Name = "toolStripSeparator1";
                this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
                // 
+               // toolStrip1
+               // 
+               this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BackButton,
+            this.FowardButton,
+            this.RefreshButton,
+            this.HomeButton,
+            this.AddressTextBox,
+            this.GoButton,
+            this.Bookmark});
+               this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+               this.toolStrip1.Name = "toolStrip1";
+               this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+               this.toolStrip1.TabIndex = 1;
+               this.toolStrip1.Text = "toolStrip1";
+               // 
+               // BackButton
+               // 
+               this.BackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
+               this.BackButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.BackButton.Name = "BackButton";
+               this.BackButton.Size = new System.Drawing.Size(23, 22);
+               this.BackButton.Text = "BackButton";
+               // 
+               // FowardButton
+               // 
+               this.FowardButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.FowardButton.Image = ((System.Drawing.Image)(resources.GetObject("FowardButton.Image")));
+               this.FowardButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.FowardButton.Name = "FowardButton";
+               this.FowardButton.Size = new System.Drawing.Size(23, 22);
+               this.FowardButton.Text = "ForwardButton";
+               // 
+               // RefreshButton
+               // 
+               this.RefreshButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.RefreshButton.Image = ((System.Drawing.Image)(resources.GetObject("RefreshButton.Image")));
+               this.RefreshButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.RefreshButton.Name = "RefreshButton";
+               this.RefreshButton.Size = new System.Drawing.Size(23, 22);
+               this.RefreshButton.Text = "RefreshButton";
+               // 
+               // HomeButton
+               // 
+               this.HomeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
+               this.HomeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.HomeButton.Name = "HomeButton";
+               this.HomeButton.Size = new System.Drawing.Size(23, 22);
+               this.HomeButton.Text = "Home Button";
+               // 
+               // AddressTextBox
+               // 
+               this.AddressTextBox.Name = "AddressTextBox";
+               this.AddressTextBox.Size = new System.Drawing.Size(550, 25);
+               // 
+               // GoButton
+               // 
+               this.GoButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.GoButton.Image = ((System.Drawing.Image)(resources.GetObject("GoButton.Image")));
+               this.GoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.GoButton.Name = "GoButton";
+               this.GoButton.Size = new System.Drawing.Size(23, 22);
+               this.GoButton.Text = "Go Button";
+               // 
+               // Bookmark
+               // 
+               this.Bookmark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+               this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
+               this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
+               this.Bookmark.Name = "Bookmark";
+               this.Bookmark.Size = new System.Drawing.Size(23, 22);
+               this.Bookmark.Text = "Bookmark";
+               // 
                // TigerNet
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.ClientSize = new System.Drawing.Size(800, 450);
+               this.Controls.Add(this.toolStrip1);
                this.Controls.Add(this.menuStrip1);
                this.MainMenuStrip = this.menuStrip1;
                this.Name = "TigerNet";
                this.Text = "TigerNet";
                this.menuStrip1.ResumeLayout(false);
                this.menuStrip1.PerformLayout();
+               this.toolStrip1.ResumeLayout(false);
+               this.toolStrip1.PerformLayout();
                this.ResumeLayout(false);
                this.PerformLayout();
 
@@ -173,5 +261,13 @@
           private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
           private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+          private System.Windows.Forms.ToolStrip toolStrip1;
+          private System.Windows.Forms.ToolStripButton BackButton;
+          private System.Windows.Forms.ToolStripButton FowardButton;
+          private System.Windows.Forms.ToolStripButton RefreshButton;
+          private System.Windows.Forms.ToolStripButton HomeButton;
+          private System.Windows.Forms.ToolStripTextBox AddressTextBox;
+          private System.Windows.Forms.ToolStripButton GoButton;
+          private System.Windows.Forms.ToolStripButton Bookmark;
      }
 }
