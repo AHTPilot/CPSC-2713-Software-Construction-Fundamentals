@@ -84,37 +84,38 @@
                // newTabToolStripMenuItem
                // 
                this.newTabToolStripMenuItem.Name = "newTabToolStripMenuItem";
-               this.newTabToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.newTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.newTabToolStripMenuItem.Text = "New Tab";
                // 
                // closeCurrentTabToolStripMenuItem
                // 
                this.closeCurrentTabToolStripMenuItem.Name = "closeCurrentTabToolStripMenuItem";
-               this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.closeCurrentTabToolStripMenuItem.Text = "Close Current Tab";
                // 
                // savePageAsHTMLToolStripMenuItem
                // 
                this.savePageAsHTMLToolStripMenuItem.Name = "savePageAsHTMLToolStripMenuItem";
-               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.savePageAsHTMLToolStripMenuItem.Text = "Save Page As HTML";
                // 
                // printPageToolStripMenuItem
                // 
                this.printPageToolStripMenuItem.Name = "printPageToolStripMenuItem";
-               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.printPageToolStripMenuItem.Text = "Print Page";
                // 
                // toolStripSeparator1
                // 
                this.toolStripSeparator1.Name = "toolStripSeparator1";
-               this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
+               this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
                // 
                // exitWebBrowserToolStripMenuItem
                // 
                this.exitWebBrowserToolStripMenuItem.Name = "exitWebBrowserToolStripMenuItem";
-               this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.exitWebBrowserToolStripMenuItem.Text = "Exit Web Browser";
+               this.exitWebBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitWebBrowserToolStripMenuItem_Click);
                // 
                // toolsToolStripMenuItem
                // 
@@ -207,7 +208,8 @@
                // AddressTextBox
                // 
                this.AddressTextBox.Name = "AddressTextBox";
-               this.AddressTextBox.Size = new System.Drawing.Size(700, 23);
+               this.AddressTextBox.Size = new System.Drawing.Size(700, 25);
+               this.AddressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddressTextBox_KeyDown);
                // 
                // GoButton
                // 
@@ -215,8 +217,9 @@
                this.GoButton.Image = ((System.Drawing.Image)(resources.GetObject("GoButton.Image")));
                this.GoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.GoButton.Name = "GoButton";
-               this.GoButton.Size = new System.Drawing.Size(23, 20);
+               this.GoButton.Size = new System.Drawing.Size(23, 22);
                this.GoButton.Text = "Go";
+               this.GoButton.Click += new System.EventHandler(this.GoButton_Click);
                // 
                // Bookmark
                // 
@@ -224,7 +227,7 @@
                this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
-               this.Bookmark.Size = new System.Drawing.Size(23, 20);
+               this.Bookmark.Size = new System.Drawing.Size(23, 22);
                this.Bookmark.Text = "Bookmark Page";
                // 
                // webBrowser1
@@ -236,14 +239,14 @@
                this.webBrowser1.Size = new System.Drawing.Size(866, 537);
                this.webBrowser1.TabIndex = 3;
                // 
-               // WebNavicationControl
+               // WebNavigationControl
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.Controls.Add(this.webBrowser1);
                this.Controls.Add(this.toolStrip1);
                this.Controls.Add(this.menuStrip1);
-               this.Name = "WebNavicationControl";
+               this.Name = "WebNavigationControl";
                this.Size = new System.Drawing.Size(866, 586);
                this.menuStrip1.ResumeLayout(false);
                this.menuStrip1.PerformLayout();
