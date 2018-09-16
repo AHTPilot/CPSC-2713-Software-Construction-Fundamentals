@@ -65,5 +65,10 @@ namespace WebBrowserUI
                webBrowser1.Navigate(backLinks.Pop());
           }
 
+          private void FowardButton_Click(object sender, EventArgs e)
+          {
+               backLinks.Push(AddressTextBox.Text);
+               webBrowser1.Navigate(forwardLinks.Pop());
+          }
      }
 }

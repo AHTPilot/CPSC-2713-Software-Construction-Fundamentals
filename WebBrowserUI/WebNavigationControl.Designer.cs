@@ -187,6 +187,7 @@
                this.FowardButton.Name = "FowardButton";
                this.FowardButton.Size = new System.Drawing.Size(23, 22);
                this.FowardButton.Text = "Forward";
+               this.FowardButton.Click += new System.EventHandler(this.FowardButton_Click);
                // 
                // RefreshButton
                // 
