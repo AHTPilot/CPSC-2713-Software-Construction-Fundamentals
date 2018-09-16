@@ -177,6 +177,7 @@
                this.BackButton.Name = "BackButton";
                this.BackButton.Size = new System.Drawing.Size(23, 22);
                this.BackButton.Text = "Back";
+               this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
                // 
                // FowardButton
                // 
@@ -195,6 +196,7 @@
                this.RefreshButton.Name = "RefreshButton";
                this.RefreshButton.Size = new System.Drawing.Size(23, 22);
                this.RefreshButton.Text = "Refresh";
+               this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
                // 
                // HomeButton
                // 
@@ -227,7 +229,7 @@
                this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
-               this.Bookmark.Size = new System.Drawing.Size(23, 22);
+               this.Bookmark.Size = new System.Drawing.Size(23, 20);
                this.Bookmark.Text = "Bookmark Page";
                // 
                // webBrowser1
