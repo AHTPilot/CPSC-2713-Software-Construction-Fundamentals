@@ -56,7 +56,6 @@
                this.toolStrip1.Size = new System.Drawing.Size(866, 25);
                this.toolStrip1.TabIndex = 2;
                this.toolStrip1.Text = "toolStrip1";
-               this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
                // 
                // BackButton
                // 
@@ -119,7 +118,7 @@
                this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
-               this.Bookmark.Size = new System.Drawing.Size(23, 22);
+               this.Bookmark.Size = new System.Drawing.Size(23, 20);
                this.Bookmark.Text = "Bookmark Page";
                // 
                // webBrowser1

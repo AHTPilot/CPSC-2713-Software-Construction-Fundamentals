@@ -36,10 +36,7 @@ namespace WebBrowserUI
                }
           }
 
-          private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-          {
-
-          }
+       
 
           private void RefreshButton_Click(object sender, EventArgs e)
           {
@@ -58,6 +55,6 @@ namespace WebBrowserUI
                webBrowser1.Navigate(forwardLinks.Pop());
           }
 
-         
+          
      }
 }
