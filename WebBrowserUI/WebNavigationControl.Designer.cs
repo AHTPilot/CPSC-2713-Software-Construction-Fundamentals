@@ -1,13 +1,13 @@
 ﻿namespace WebBrowserUI
 {
-     partial class TigerNet
+     partial class WebNavigationControl
      {
-          /// <summary>
+          /// <summary> 
           /// Required designer variable.
           /// </summary>
           private System.ComponentModel.IContainer components = null;
 
-          /// <summary>
+          /// <summary> 
           /// Clean up any resources being used.
           /// </summary>
           /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,15 +20,15 @@
                base.Dispose(disposing);
           }
 
-          #region Windows Form Designer generated code
+          #region Component Designer generated code
 
-          /// <summary>
-          /// Required method for Designer support - do not modify
+          /// <summary> 
+          /// Required method for Designer support - do not modify 
           /// the contents of this method with the code editor.
           /// </summary>
           private void InitializeComponent()
           {
-               System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TigerNet));
+               System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WebNavigationControl));
                this.menuStrip1 = new System.Windows.Forms.MenuStrip();
                this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.newTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,14 +50,9 @@
                this.AddressTextBox = new System.Windows.Forms.ToolStripTextBox();
                this.GoButton = new System.Windows.Forms.ToolStripButton();
                this.Bookmark = new System.Windows.Forms.ToolStripButton();
-               this.tabPage1 = new System.Windows.Forms.TabPage();
                this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-               this.tabControl1 = new System.Windows.Forms.TabControl();
-               this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
                this.menuStrip1.SuspendLayout();
                this.toolStrip1.SuspendLayout();
-               this.tabPage1.SuspendLayout();
-               this.tabControl1.SuspendLayout();
                this.SuspendLayout();
                // 
                // menuStrip1
@@ -69,8 +64,8 @@
             this.helpToolStripMenuItem});
                this.menuStrip1.Location = new System.Drawing.Point(0, 0);
                this.menuStrip1.Name = "menuStrip1";
-               this.menuStrip1.Size = new System.Drawing.Size(882, 24);
-               this.menuStrip1.TabIndex = 0;
+               this.menuStrip1.Size = new System.Drawing.Size(866, 24);
+               this.menuStrip1.TabIndex = 1;
                this.menuStrip1.Text = "menuStrip1";
                // 
                // fileToolStripMenuItem
@@ -120,7 +115,6 @@
                this.exitWebBrowserToolStripMenuItem.Name = "exitWebBrowserToolStripMenuItem";
                this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.exitWebBrowserToolStripMenuItem.Text = "Exit Web Browser";
-               this.exitWebBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitWebBrowserToolStripMenuItem_Click);
                // 
                // toolsToolStripMenuItem
                // 
@@ -156,7 +150,6 @@
                this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
                this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
                this.aboutToolStripMenuItem.Text = "About";
-               this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
                // 
                // toolStrip1
                // 
@@ -170,9 +163,10 @@
             this.Bookmark});
                this.toolStrip1.Location = new System.Drawing.Point(0, 24);
                this.toolStrip1.Name = "toolStrip1";
-               this.toolStrip1.Size = new System.Drawing.Size(882, 25);
-               this.toolStrip1.TabIndex = 1;
+               this.toolStrip1.Size = new System.Drawing.Size(866, 25);
+               this.toolStrip1.TabIndex = 2;
                this.toolStrip1.Text = "toolStrip1";
+               this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
                // 
                // BackButton
                // 
@@ -213,9 +207,7 @@
                // AddressTextBox
                // 
                this.AddressTextBox.Name = "AddressTextBox";
-               this.AddressTextBox.Size = new System.Drawing.Size(700, 25);
-               this.AddressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddressTextBox_KeyDown);
-               this.AddressTextBox.Click += new System.EventHandler(this.GoButton_Click);
+               this.AddressTextBox.Size = new System.Drawing.Size(700, 23);
                // 
                // GoButton
                // 
@@ -223,9 +215,8 @@
                this.GoButton.Image = ((System.Drawing.Image)(resources.GetObject("GoButton.Image")));
                this.GoButton.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.GoButton.Name = "GoButton";
-               this.GoButton.Size = new System.Drawing.Size(23, 22);
+               this.GoButton.Size = new System.Drawing.Size(23, 20);
                this.GoButton.Text = "Go";
-               this.GoButton.Click += new System.EventHandler(this.GoButton_Click);
                // 
                // Bookmark
                // 
@@ -233,55 +224,31 @@
                this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
-               this.Bookmark.Size = new System.Drawing.Size(23, 22);
+               this.Bookmark.Size = new System.Drawing.Size(23, 20);
                this.Bookmark.Text = "Bookmark Page";
-               // 
-               // tabPage1
-               // 
-               this.tabPage1.Controls.Add(this.webBrowser1);
-               this.tabPage1.Location = new System.Drawing.Point(4, 22);
-               this.tabPage1.Name = "tabPage1";
-               this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-               this.tabPage1.Size = new System.Drawing.Size(849, 402);
-               this.tabPage1.TabIndex = 0;
-               this.tabPage1.Text = "tabPage1";
-               this.tabPage1.UseVisualStyleBackColor = true;
                // 
                // webBrowser1
                // 
                this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-               this.webBrowser1.Location = new System.Drawing.Point(3, 3);
+               this.webBrowser1.Location = new System.Drawing.Point(0, 49);
                this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
                this.webBrowser1.Name = "webBrowser1";
-               this.webBrowser1.Size = new System.Drawing.Size(843, 396);
-               this.webBrowser1.TabIndex = 0;
+               this.webBrowser1.Size = new System.Drawing.Size(866, 537);
+               this.webBrowser1.TabIndex = 3;
                // 
-               // tabControl1
-               // 
-               this.tabControl1.Controls.Add(this.tabPage1);
-               this.tabControl1.Location = new System.Drawing.Point(13, 53);
-               this.tabControl1.Name = "tabControl1";
-               this.tabControl1.SelectedIndex = 0;
-               this.tabControl1.Size = new System.Drawing.Size(857, 428);
-               this.tabControl1.TabIndex = 2;
-               // 
-               // TigerNet
+               // WebNavicationControl
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-               this.ClientSize = new System.Drawing.Size(882, 493);
-               this.Controls.Add(this.tabControl1);
+               this.Controls.Add(this.webBrowser1);
                this.Controls.Add(this.toolStrip1);
                this.Controls.Add(this.menuStrip1);
-               this.MainMenuStrip = this.menuStrip1;
-               this.Name = "TigerNet";
-               this.Text = "TigerNet";
+               this.Name = "WebNavicationControl";
+               this.Size = new System.Drawing.Size(866, 586);
                this.menuStrip1.ResumeLayout(false);
                this.menuStrip1.PerformLayout();
                this.toolStrip1.ResumeLayout(false);
                this.toolStrip1.PerformLayout();
-               this.tabPage1.ResumeLayout(false);
-               this.tabControl1.ResumeLayout(false);
                this.ResumeLayout(false);
                this.PerformLayout();
 
@@ -295,13 +262,13 @@
           private System.Windows.Forms.ToolStripMenuItem closeCurrentTabToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem savePageAsHTMLToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem printPageToolStripMenuItem;
+          private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
           private System.Windows.Forms.ToolStripMenuItem exitWebBrowserToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem manageHistoryToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem manageBookmarksToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-          private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
           private System.Windows.Forms.ToolStrip toolStrip1;
           private System.Windows.Forms.ToolStripButton BackButton;
           private System.Windows.Forms.ToolStripButton FowardButton;
@@ -310,9 +277,6 @@
           private System.Windows.Forms.ToolStripTextBox AddressTextBox;
           private System.Windows.Forms.ToolStripButton GoButton;
           private System.Windows.Forms.ToolStripButton Bookmark;
-          private System.Windows.Forms.TabPage tabPage1;
           private System.Windows.Forms.WebBrowser webBrowser1;
-          private System.Windows.Forms.TabControl tabControl1;
-          private System.ComponentModel.BackgroundWorker backgroundWorker1;
      }
 }
