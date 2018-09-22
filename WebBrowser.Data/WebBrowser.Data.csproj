@@ -71,8 +71,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="HistoryDb_log.ldf">
-      <DependentUpon>HistoryDb.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>HistoryDb.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
