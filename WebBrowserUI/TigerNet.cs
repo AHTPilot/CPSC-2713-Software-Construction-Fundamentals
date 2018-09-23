@@ -58,5 +58,11 @@ namespace WebBrowserUI
                var itemsForm = new BookmarkHistoryForm();
                itemsForm.ShowDialog();
           }
+
+          private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+          {
+               var itemsForm = new HistoryManagerForm();
+               itemsForm.ShowDialog();
+          }
      }
 }

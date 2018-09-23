@@ -35,6 +35,7 @@ namespace WebBrowserUI
                {
                     webBrowser1.Navigate(AddressTextBox.Text);
                     backLinks.Push(AddressTextBox.Text);
+
                }
           }
 
@@ -65,6 +66,16 @@ namespace WebBrowserUI
 
                BookmarkManager.addItemBookmark(item);
 
+          }
+
+          private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+          {
+               var item = new HistoryItem();
+               item.URL = AddressTextBox.Text;
+               item.Title = webBrowser1.DocumentTitle;
+               item.Date = DateTime.Now.ToString("mm/dd/yyyy HH:mm:ss");
+
+               HistoryManager.addItemHistory(item);
           }
      }
 }
