@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WebBrowser.Logic;
+using System.Text.RegularExpressions;
 
 namespace WebBrowserUI
 {
@@ -55,6 +57,14 @@ namespace WebBrowserUI
                webBrowser1.Navigate(forwardLinks.Pop());
           }
 
-          
+          private void Bookmark_Click(object sender, EventArgs e)
+          {
+               var item = new BookmarkItem();
+               item.URL = AddressTextBox.Text;
+               item.Title = webBrowser1.DocumentTitle;
+
+               BookmarkManager.addItemBookmark(item);
+
+          }
      }
 }

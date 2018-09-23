@@ -123,19 +123,19 @@
                // savePageAsHTMLToolStripMenuItem
                // 
                this.savePageAsHTMLToolStripMenuItem.Name = "savePageAsHTMLToolStripMenuItem";
-               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.savePageAsHTMLToolStripMenuItem.Text = "Save Page As HTML";
                // 
                // printPageToolStripMenuItem
                // 
                this.printPageToolStripMenuItem.Name = "printPageToolStripMenuItem";
-               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.printPageToolStripMenuItem.Text = "Print Page";
                // 
                // toolStripSeparator1
                // 
                this.toolStripSeparator1.Name = "toolStripSeparator1";
-               this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
+               this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
                // 
                // exitWebBrowserToolStripMenuItem
                // 
@@ -156,14 +156,15 @@
                // manageHistoryToolStripMenuItem
                // 
                this.manageHistoryToolStripMenuItem.Name = "manageHistoryToolStripMenuItem";
-               this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.manageHistoryToolStripMenuItem.Text = "Manage History";
                // 
                // manageBookmarksToolStripMenuItem
                // 
                this.manageBookmarksToolStripMenuItem.Name = "manageBookmarksToolStripMenuItem";
-               this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+               this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
                this.manageBookmarksToolStripMenuItem.Text = "Manage Bookmarks";
+               this.manageBookmarksToolStripMenuItem.Click += new System.EventHandler(this.manageBookmarksToolStripMenuItem_Click);
                // 
                // helpToolStripMenuItem
                // 
@@ -176,7 +177,7 @@
                // aboutToolStripMenuItem
                // 
                this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-               this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
                this.aboutToolStripMenuItem.Text = "About";
                this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
                // 

@@ -120,6 +120,7 @@
                this.Bookmark.Name = "Bookmark";
                this.Bookmark.Size = new System.Drawing.Size(23, 20);
                this.Bookmark.Text = "Bookmark Page";
+               this.Bookmark.Click += new System.EventHandler(this.Bookmark_Click);
                // 
                // webBrowser1
                // 
