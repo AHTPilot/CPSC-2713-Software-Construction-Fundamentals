@@ -1,0 +1,10 @@
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\bin\Debug\EmployeeClass.exe.config
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\bin\Debug\EmployeeClass.exe
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\bin\Debug\EmployeeClass.pdb
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.csprojAssemblyReference.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.Form1.resources
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.Properties.Resources.resources
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.csproj.GenerateResource.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.csproj.CoreCompileInputs.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.exe
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 02\TomFenyak_module2activity2\EmployeeClass\EmployeeClass\obj\Debug\EmployeeClass.pdb
