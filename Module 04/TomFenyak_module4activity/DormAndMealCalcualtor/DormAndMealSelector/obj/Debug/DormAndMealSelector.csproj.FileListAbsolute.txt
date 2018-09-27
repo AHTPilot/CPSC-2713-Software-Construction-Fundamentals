@@ -1,0 +1,11 @@
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\bin\Debug\DormAndMealSelector.exe.config
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\bin\Debug\DormAndMealSelector.exe
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\bin\Debug\DormAndMealSelector.pdb
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.csprojAssemblyReference.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.PlanSelection.resources
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.Properties.Resources.resources
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.TotalCharges.resources
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.csproj.GenerateResource.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.csproj.CoreCompileInputs.cache
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.exe
+C:\Users\tomya\OneDrive\Documents\Auburn CS\Auburn CS\CPSC 2713 Software Construction\Module 04\DormAndMealCalcualtor\DormAndMealSelector\obj\Debug\DormAndMealSelector.pdb
