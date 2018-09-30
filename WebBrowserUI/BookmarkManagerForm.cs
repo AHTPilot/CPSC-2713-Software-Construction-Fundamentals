@@ -21,11 +21,42 @@ namespace WebBrowserUI
           private void BookmarkHistoryForm_Load(object sender, EventArgs e)
           {
                var items = BookmarkManager.GetBookmarkItems();
-               listBox1.Items.Clear();
+               listBoxBookmark.Items.Clear();
 
                foreach (var item in items)
                {
-                    listBox1.Items.Add(string.Format("{0} ({1})", item.Title, item.URL));
+                    listBoxBookmark.Items.Add(string.Format("{0} ({1})", item.Title, item.URL));
+               }
+          }
+
+          private void buttonSearchBookmark_Click(object sender, EventArgs e)
+          {
+               {
+                    var items = HistoryManager.GetHistoryItems();
+
+                    listBoxBookmark.Items.Clear();
+
+                    foreach (var item in items)
+                    {
+                         if (item.Title.Contains(textBoxSearchBookmark.Text) || item.URL.Contains(textBoxSearchBookmark.Text))
+                         {
+                              listBoxBookmark.Items.Add(string.Format("[{0}] {1} ({2})", item.Date, item.Title, item.URL));
+                         }
+
+                    }
+               }
+          }
+
+          private void buttonClearBookmark_Click(object sender, EventArgs e)
+          {
+               listBoxBookmark.Items.Clear();
+          }
+
+          private void buttonDeleteBookmark_Click(object sender, EventArgs e)
+          {
+               {
+                    if (this.listBoxBookmark.SelectedIndex >= 0)
+                         this.listBoxBookmark.Items.RemoveAt(this.listBoxBookmark.SelectedIndex);
                }
           }
      }

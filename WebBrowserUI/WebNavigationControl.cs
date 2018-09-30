@@ -29,6 +29,7 @@ namespace WebBrowserUI
                backLinks.Push(AddressTextBox.Text);
                timer1.Start();
                toolStripStatusLabel1.Text = "Loading";
+               toolStripProgressBarLoading.Value = 0;
           }
 
           private void AddressTextBox_KeyDown(object sender, KeyEventArgs e)
@@ -40,6 +41,7 @@ namespace WebBrowserUI
 
                     timer1.Start();
                     toolStripStatusLabel1.Text = "Loading";
+                    toolStripProgressBarLoading.Value = 0;
                }
           }
 
@@ -51,6 +53,7 @@ namespace WebBrowserUI
 
                timer1.Start();
                toolStripStatusLabel1.Text = "Loading";
+               toolStripProgressBarLoading.Value = 0;
           }
 
           private void BackButton_Click(object sender, EventArgs e)
@@ -59,6 +62,7 @@ namespace WebBrowserUI
                webBrowser1.Navigate(backLinks.Pop());
                timer1.Start();
                toolStripStatusLabel1.Text = "Loading";
+               toolStripProgressBarLoading.Value = 0;
           }
 
           private void FowardButton_Click(object sender, EventArgs e)
@@ -68,6 +72,7 @@ namespace WebBrowserUI
 
                timer1.Start();
                toolStripStatusLabel1.Text = "Loading";
+               toolStripProgressBarLoading.Value = 0;
           }
 
           private void Bookmark_Click(object sender, EventArgs e)
@@ -93,7 +98,7 @@ namespace WebBrowserUI
                     HistoryManager.addItemHistory(item);
                     toolStripStatusLabel1.Text = "Done";
                     timer1.Stop();
-                    toolStripProgressBarLoading.Value = 0;
+                    toolStripProgressBarLoading.Value = 100;
                }
           }
 
