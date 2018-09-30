@@ -22,7 +22,8 @@ namespace WebBrowser.Logic
                var results = new List<HistoryItem>();
                var rows = adapter.GetData();
 
-               foreach(var row in rows)
+
+               foreach (var row in rows)
                {
                     var item = new HistoryItem();
                     item.URL = row.URL;

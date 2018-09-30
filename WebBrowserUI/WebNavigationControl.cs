@@ -70,12 +70,16 @@ namespace WebBrowserUI
 
           private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
           {
-               var item = new HistoryItem();
-               item.URL = AddressTextBox.Text;
-               item.Title = webBrowser1.DocumentTitle;
-               item.Date = DateTime.Now.ToString("mm/dd/yyyy HH:mm:ss");
+               if (webBrowser1.Url.AbsoluteUri == e.Url.AbsoluteUri)
+               {
 
-               HistoryManager.addItemHistory(item);
+                    var item = new HistoryItem();
+                    item.URL = AddressTextBox.Text;
+                    item.Title = webBrowser1.DocumentTitle;
+                    item.Date = DateTime.Now.ToString("mm/dd/yyyy HH:mm:ss");
+
+                    HistoryManager.addItemHistory(item);
+               }
           }
      }
 }
