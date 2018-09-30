@@ -45,13 +45,9 @@
                this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.webNavigationControl1 = new WebBrowserUI.WebNavigationControl();
-               this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-               this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-               this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
                this.tabPage1.SuspendLayout();
                this.tabControl1.SuspendLayout();
                this.menuStrip1.SuspendLayout();
-               this.statusStrip1.SuspendLayout();
                this.SuspendLayout();
                // 
                // tabPage1
@@ -193,34 +189,11 @@
                this.webNavigationControl1.Size = new System.Drawing.Size(919, 419);
                this.webNavigationControl1.TabIndex = 1;
                // 
-               // statusStrip1
-               // 
-               this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1,
-            this.toolStripStatusLabel1});
-               this.statusStrip1.Location = new System.Drawing.Point(0, 471);
-               this.statusStrip1.Name = "statusStrip1";
-               this.statusStrip1.Size = new System.Drawing.Size(965, 22);
-               this.statusStrip1.TabIndex = 4;
-               this.statusStrip1.Text = "statusStrip1";
-               // 
-               // toolStripProgressBar1
-               // 
-               this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-               this.toolStripProgressBar1.Size = new System.Drawing.Size(250, 16);
-               // 
-               // toolStripStatusLabel1
-               // 
-               this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-               this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-               this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-               // 
                // TigerNet
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.ClientSize = new System.Drawing.Size(965, 493);
-               this.Controls.Add(this.statusStrip1);
                this.Controls.Add(this.menuStrip1);
                this.Controls.Add(this.tabControl1);
                this.Name = "TigerNet";
@@ -229,8 +202,6 @@
                this.tabControl1.ResumeLayout(false);
                this.menuStrip1.ResumeLayout(false);
                this.menuStrip1.PerformLayout();
-               this.statusStrip1.ResumeLayout(false);
-               this.statusStrip1.PerformLayout();
                this.ResumeLayout(false);
                this.PerformLayout();
 
@@ -255,8 +226,5 @@
           private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
           private WebNavigationControl webNavigationControl1;
-          private System.Windows.Forms.StatusStrip statusStrip1;
-          private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
-          private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
      }
 }
