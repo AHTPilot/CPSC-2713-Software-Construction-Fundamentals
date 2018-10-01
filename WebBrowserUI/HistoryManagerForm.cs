@@ -13,7 +13,6 @@ namespace WebBrowserUI
 {
      public partial class HistoryManagerForm : Form
      {
-          string keyword;
 
           public HistoryManagerForm()
           {
@@ -51,15 +50,16 @@ namespace WebBrowserUI
 
           private void buttonClearHistory_Click(object sender, EventArgs e)
           {
+               HistoryManager.ClearHistory();
                listBoxHistory.Items.Clear();
-               
           }
 
           private void buttonDeleteHistory_Click(object sender, EventArgs e)
           {
-               if (this.listBoxHistory.SelectedIndex >= 0)
-                    this.listBoxHistory.Items.RemoveAt(this.listBoxHistory.SelectedIndex);
-               
+               string input = listBoxHistory.GetItemText(listBoxHistory.SelectedItem);
+
+               HistoryManager.RemoveHistoryItem(input);
+               listBoxHistory.Items.RemoveAt(listBoxHistory.SelectedIndex);
           }
      }
 }

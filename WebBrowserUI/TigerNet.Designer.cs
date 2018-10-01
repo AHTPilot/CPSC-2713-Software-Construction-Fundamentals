@@ -44,8 +44,8 @@
                this.manageBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-               this.webNavigationControl1 = new WebBrowserUI.WebNavigationControl();
                this.clearHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+               this.webNavigationControl1 = new WebBrowserUI.WebNavigationControl();
                this.tabPage1.SuspendLayout();
                this.tabControl1.SuspendLayout();
                this.menuStrip1.SuspendLayout();
@@ -110,38 +110,38 @@
                // newTabToolStripMenuItem
                // 
                this.newTabToolStripMenuItem.Name = "newTabToolStripMenuItem";
-               this.newTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.newTabToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.newTabToolStripMenuItem.Text = "New Tab";
                this.newTabToolStripMenuItem.Click += new System.EventHandler(this.newTabToolStripMenuItem_Click);
                // 
                // closeCurrentTabToolStripMenuItem
                // 
                this.closeCurrentTabToolStripMenuItem.Name = "closeCurrentTabToolStripMenuItem";
-               this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.closeCurrentTabToolStripMenuItem.Text = "Close Current Tab";
                this.closeCurrentTabToolStripMenuItem.Click += new System.EventHandler(this.closeCurrentTabToolStripMenuItem_Click);
                // 
                // savePageAsHTMLToolStripMenuItem
                // 
                this.savePageAsHTMLToolStripMenuItem.Name = "savePageAsHTMLToolStripMenuItem";
-               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.savePageAsHTMLToolStripMenuItem.Text = "Save Page As HTML";
                // 
                // printPageToolStripMenuItem
                // 
                this.printPageToolStripMenuItem.Name = "printPageToolStripMenuItem";
-               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.printPageToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.printPageToolStripMenuItem.Text = "Print Page";
                // 
                // toolStripSeparator1
                // 
                this.toolStripSeparator1.Name = "toolStripSeparator1";
-               this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+               this.toolStripSeparator1.Size = new System.Drawing.Size(176, 6);
                // 
                // exitWebBrowserToolStripMenuItem
                // 
                this.exitWebBrowserToolStripMenuItem.Name = "exitWebBrowserToolStripMenuItem";
-               this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
                this.exitWebBrowserToolStripMenuItem.Text = "Exit Web Browser";
                this.exitWebBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitWebBrowserToolStripMenuItem_Click);
                // 
@@ -184,18 +184,19 @@
                this.aboutToolStripMenuItem.Text = "About";
                this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
                // 
+               // clearHistoryToolStripMenuItem
+               // 
+               this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
+               this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.clearHistoryToolStripMenuItem.Text = "Clear History";
+               this.clearHistoryToolStripMenuItem.Click += new System.EventHandler(this.clearHistoryToolStripMenuItem_Click);
+               // 
                // webNavigationControl1
                // 
                this.webNavigationControl1.Location = new System.Drawing.Point(3, 3);
                this.webNavigationControl1.Name = "webNavigationControl1";
                this.webNavigationControl1.Size = new System.Drawing.Size(919, 419);
                this.webNavigationControl1.TabIndex = 1;
-               // 
-               // clearHistoryToolStripMenuItem
-               // 
-               this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
-               this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-               this.clearHistoryToolStripMenuItem.Text = "Clear History";
                // 
                // TigerNet
                // 

@@ -49,15 +49,18 @@ namespace WebBrowserUI
 
           private void buttonClearBookmark_Click(object sender, EventArgs e)
           {
+               BookmarkManager.ClearBookmark();
                listBoxBookmark.Items.Clear();
           }
 
           private void buttonDeleteBookmark_Click(object sender, EventArgs e)
           {
-               {
-                    if (this.listBoxBookmark.SelectedIndex >= 0)
-                         this.listBoxBookmark.Items.RemoveAt(this.listBoxBookmark.SelectedIndex);
-               }
+
+               string input = listBoxBookmark.GetItemText(listBoxBookmark.SelectedItem);
+
+               HistoryManager.RemoveHistoryItem(input);
+               listBoxBookmark.Items.RemoveAt(listBoxBookmark.SelectedIndex);
+
           }
      }
 }

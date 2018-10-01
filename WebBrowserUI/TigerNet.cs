@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WebBrowserUI
 {
      public partial class TigerNet : Form
@@ -63,6 +64,11 @@ namespace WebBrowserUI
           {
                var itemsForm = new HistoryManagerForm();
                itemsForm.ShowDialog();
+          }
+
+          private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+          {
+
           }
      }
 }
