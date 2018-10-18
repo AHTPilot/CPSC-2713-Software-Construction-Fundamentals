@@ -44,6 +44,7 @@
                this.manageBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+               this.clearHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
                this.webNavigationControl1 = new WebBrowserUI.WebNavigationControl();
                this.tabPage1.SuspendLayout();
                this.tabControl1.SuspendLayout();
@@ -148,7 +149,8 @@
                // 
                this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageHistoryToolStripMenuItem,
-            this.manageBookmarksToolStripMenuItem});
+            this.manageBookmarksToolStripMenuItem,
+            this.clearHistoryToolStripMenuItem});
                this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
                this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
                this.toolsToolStripMenuItem.Text = "Tools";
@@ -181,6 +183,13 @@
                this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
                this.aboutToolStripMenuItem.Text = "About";
                this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+               // 
+               // clearHistoryToolStripMenuItem
+               // 
+               this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
+               this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+               this.clearHistoryToolStripMenuItem.Text = "Clear History";
+               this.clearHistoryToolStripMenuItem.Click += new System.EventHandler(this.clearHistoryToolStripMenuItem_Click);
                // 
                // webNavigationControl1
                // 
@@ -226,5 +235,6 @@
           private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
           private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
           private WebNavigationControl webNavigationControl1;
+          private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
      }
 }

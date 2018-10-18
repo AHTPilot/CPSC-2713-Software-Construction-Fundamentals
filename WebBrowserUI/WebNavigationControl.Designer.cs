@@ -28,6 +28,7 @@
           /// </summary>
           private void InitializeComponent()
           {
+               this.components = new System.ComponentModel.Container();
                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WebNavigationControl));
                this.toolStrip1 = new System.Windows.Forms.ToolStrip();
                this.BackButton = new System.Windows.Forms.ToolStripButton();
@@ -38,7 +39,12 @@
                this.GoButton = new System.Windows.Forms.ToolStripButton();
                this.Bookmark = new System.Windows.Forms.ToolStripButton();
                this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+               this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+               this.toolStripProgressBarLoading = new System.Windows.Forms.ToolStripProgressBar();
+               this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+               this.timer1 = new System.Windows.Forms.Timer(this.components);
                this.toolStrip1.SuspendLayout();
+               this.statusStrip1.SuspendLayout();
                this.SuspendLayout();
                // 
                // toolStrip1
@@ -118,7 +124,7 @@
                this.Bookmark.Image = ((System.Drawing.Image)(resources.GetObject("Bookmark.Image")));
                this.Bookmark.ImageTransparentColor = System.Drawing.Color.Magenta;
                this.Bookmark.Name = "Bookmark";
-               this.Bookmark.Size = new System.Drawing.Size(23, 20);
+               this.Bookmark.Size = new System.Drawing.Size(23, 22);
                this.Bookmark.Text = "Bookmark Page";
                this.Bookmark.Click += new System.EventHandler(this.Bookmark_Click);
                // 
@@ -132,16 +138,46 @@
                this.webBrowser1.TabIndex = 3;
                this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
                // 
+               // statusStrip1
+               // 
+               this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Top;
+               this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripProgressBarLoading,
+            this.toolStripStatusLabel1});
+               this.statusStrip1.Location = new System.Drawing.Point(0, 25);
+               this.statusStrip1.Name = "statusStrip1";
+               this.statusStrip1.Size = new System.Drawing.Size(866, 22);
+               this.statusStrip1.TabIndex = 4;
+               this.statusStrip1.Text = "statusStrip1";
+               // 
+               // toolStripProgressBarLoading
+               // 
+               this.toolStripProgressBarLoading.Name = "toolStripProgressBarLoading";
+               this.toolStripProgressBarLoading.Size = new System.Drawing.Size(250, 16);
+               this.toolStripProgressBarLoading.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+               // 
+               // toolStripStatusLabel1
+               // 
+               this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+               this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+               // 
+               // timer1
+               // 
+               this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+               // 
                // WebNavigationControl
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+               this.Controls.Add(this.statusStrip1);
                this.Controls.Add(this.webBrowser1);
                this.Controls.Add(this.toolStrip1);
                this.Name = "WebNavigationControl";
                this.Size = new System.Drawing.Size(866, 586);
                this.toolStrip1.ResumeLayout(false);
                this.toolStrip1.PerformLayout();
+               this.statusStrip1.ResumeLayout(false);
+               this.statusStrip1.PerformLayout();
                this.ResumeLayout(false);
                this.PerformLayout();
 
@@ -157,5 +193,9 @@
           private System.Windows.Forms.ToolStripButton GoButton;
           private System.Windows.Forms.ToolStripButton Bookmark;
           private System.Windows.Forms.WebBrowser webBrowser1;
+          private System.Windows.Forms.StatusStrip statusStrip1;
+          public System.Windows.Forms.ToolStripProgressBar toolStripProgressBarLoading;
+          private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+          public System.Windows.Forms.Timer timer1;
      }
 }
